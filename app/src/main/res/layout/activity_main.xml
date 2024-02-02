@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#f7e3d6"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/TvSt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/st11"
+        android:textSize="24sp"
+        android:textColor="@android:color/secondary_text_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.31" />
+
+    <Spinner
+        android:id="@+id/spMember"
+        android:layout_width="154dp"
+        android:layout_height="54dp"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/black"
+        android:entries="@array/list"
+        android:spinnerMode="dropdown"
+        android:textColor="@color/black"
+
+        android:theme="@style/SpinnerTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.443" />
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="70dp"
+        android:text="@string/start"
+        android:textColor="@color/white"
+
+        app:backgroundTint="#011a2a"
+        app:layout_constraintBottom_toTopOf="@+id/btHowto"
+        app:layout_constraintEnd_toEndOf="@+id/spMember"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/spMember"
+        app:layout_constraintTop_toBottomOf="@+id/spMember" />
+
+    <Button
+        android:id="@+id/btHowto"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:text="@string/textHowto"
+        android:textColor="@color/white"
+
+        app:backgroundTint="#011a2a"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btStart"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/btStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.834" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="133dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/TvSt"
+        android:textColor="@android:color/secondary_text_light"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

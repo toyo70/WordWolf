@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">WordWolf</string>
+
+    <string-array name="list">
+        <item>3人</item>
+        <item>4人</item>
+        <item>5人</item>
+        <item>6人</item>
+        <item>7人</item>
+        <item>8人</item>
+    </string-array>
+
+    <string name="title_activity_game">GameActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="st11">何人で開始しますか</string>
+    <string name="start">START</string>
+    <string name="textHowto">遊び方</string>
+    <string name="textYour">0番さんに\n渡してください</string>
+    <string name="hello">Hello</string>
+</resources>
